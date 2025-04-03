@@ -118,7 +118,7 @@ if "initialized" not in st.session_state:
     st.session_state.initialized = True  # Flag per evitare ripetizioni
 
 with st.sidebar:
-    st.image('giunti.jpg', width=400)
+    st.image('image.jpg', width=400)
     st.markdown(
         """  
         ### Ciao! 👋  
@@ -187,7 +187,7 @@ elif st.session_state.current_step == "fill_params" and st.session_state.missing
     # Mostra informazioni sul template
     if st.session_state.best_template:
         st.markdown(
-            f"**Template più simile trovato:** [{st.session_state.best_template['descrizione']}]({st.session_state.best_template['link']})")
+            f"**Template più simile trovato:** [{st.session_state.best_template['descrizione']}]")
 
     # Crea i campi di input per i parametri mancanti senza usare un form
     st.write("**Completa i parametri mancanti**")
